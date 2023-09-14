@@ -1,5 +1,6 @@
 package com.mia.springboot.domain.posts;
 
+import com.mia.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     /***
      * Posts 클래스는 실제 DB의 테이블과 매칭될 클래스로 보통 Entity 클래스라고도 함.
